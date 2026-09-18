@@ -7,6 +7,7 @@
 	import Task6 from '$lib/components/Task6.svelte';
 	import Task7 from '$lib/components/Task7.svelte';
 	import Task8 from '$lib/components/Task8.svelte';
+	import Task9 from '$lib/components/Task9.svelte';
 	import TaskEnd from '$lib/components/TaskEnd.svelte';
 </script>
 
@@ -31,4 +32,6 @@
 <Task7 />
 <TaskEnd />
 <Task8 />
+<TaskEnd />
+<Task9 />
 <TaskEnd />
