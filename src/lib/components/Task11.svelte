@@ -7,7 +7,9 @@
 <button class={['bg-red-400', { flipped }]} onclick={() => (flipped = !flipped)}
 	>Flippable button</button
 >
-<ColorBox color="red" />
+<ColorBox --color="green" />
+<ColorBox --color="blue" />
+<ColorBox --color="teal" />
 
 <style>
 	.flipped {
