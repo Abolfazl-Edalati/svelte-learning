@@ -1,38 +1,40 @@
 <script lang="ts">
-	import Task1 from '$lib/components/Task1.svelte';
-	import Task10 from '$lib/components/Task10.svelte';
-	import Task11 from '$lib/components/Task11.svelte';
-	import Task12 from '$lib/components/Task12.svelte';
-	import Task13 from '$lib/components/Task13.svelte';
-	import Task14 from '$lib/components/Task14.svelte';
-	import Task15 from '$lib/components/Task15.svelte';
-	import Task16 from '$lib/components/Task16.svelte';
-	import Task17 from '$lib/components/Task17.svelte';
-	import Task18 from '$lib/components/Task18.svelte';
-	import Task19 from '$lib/components/Task19.svelte';
-	import Task2 from '$lib/components/Task2.svelte';
-	import Task20 from '$lib/components/Task20.svelte';
-	import Task21 from '$lib/components/Task21/Task21.svelte';
-	import Task22 from '$lib/components/Task22.svelte';
-	import Task23 from '$lib/components/Task23.svelte';
-	import Task24 from '$lib/components/Task24.svelte';
-	import Task3 from '$lib/components/Task3.svelte';
-	import Task4 from '$lib/components/Task4.svelte';
-	import Task5 from '$lib/components/Task5.svelte';
-	import Task6 from '$lib/components/Task6.svelte';
-	import Task7 from '$lib/components/Task7.svelte';
-	import Task8 from '$lib/components/Task8.svelte';
-	import Task9 from '$lib/components/Task9.svelte';
-	import TaskEnd from '$lib/components/TaskEnd.svelte';
-	let destroyComponent = $state(false);
+	// import Card from '$lib/components/Card.svelte';
+	// import Task1 from '$lib/components/Task1.svelte';
+	// import Task10 from '$lib/components/Task10.svelte';
+	// import Task11 from '$lib/components/Task11.svelte';
+	// import Task12 from '$lib/components/Task12.svelte';
+	// import Task13 from '$lib/components/Task13.svelte';
+	// import Task14 from '$lib/components/Task14.svelte';
+	// import Task15 from '$lib/components/Task15.svelte';
+	// import Task16 from '$lib/components/Task16.svelte';
+	// import Task17 from '$lib/components/Task17.svelte';
+	// import Task18 from '$lib/components/Task18.svelte';
+	// import Task19 from '$lib/components/Task19.svelte';
+	// import Task2 from '$lib/components/Task2.svelte';
+	// import Task20 from '$lib/components/Task20.svelte';
+	// import Task21 from '$lib/components/Task21/Task21.svelte';
+	// import Task22 from '$lib/components/Task22.svelte';
+	// import Task23 from '$lib/components/Task23.svelte';
+	// import Task24 from '$lib/components/Task24.svelte';
+	import Task25 from '$lib/components/Task25.svelte';
+	// import Task3 from '$lib/components/Task3.svelte';
+	// import Task4 from '$lib/components/Task4.svelte';
+	// import Task5 from '$lib/components/Task5.svelte';
+	// import Task6 from '$lib/components/Task6.svelte';
+	// import Task7 from '$lib/components/Task7.svelte';
+	// import Task8 from '$lib/components/Task8.svelte';
+	// import Task9 from '$lib/components/Task9.svelte';
+	// import TaskEnd from '$lib/components/TaskEnd.svelte';
+	// let destroyComponent = $state(false);
 
-	setTimeout(() => {
-		destroyComponent = true;
-		console.log(destroyComponent);
-	}, 5000);
+	// setTimeout(() => {
+	// 	destroyComponent = true;
+	// 	console.log(destroyComponent);
+	// }, 5000);
 </script>
 
-<Task1 />
+<!-- <Task1 />
 <TaskEnd />
 <Task2 />
 <TaskEnd />
@@ -86,4 +88,5 @@
 <TaskEnd />
 <Task23 />
 <TaskEnd />
-<Task24 value="Abolfazl" />
+<Task24 value="Abolfazl" /> -->
+<Task25 />
