@@ -12,6 +12,7 @@
 	import Task19 from '$lib/components/Task19.svelte';
 	import Task2 from '$lib/components/Task2.svelte';
 	import Task20 from '$lib/components/Task20.svelte';
+	import Task21 from '$lib/components/Task21/Task21.svelte';
 	import Task3 from '$lib/components/Task3.svelte';
 	import Task4 from '$lib/components/Task4.svelte';
 	import Task5 from '$lib/components/Task5.svelte';
@@ -76,3 +77,4 @@
 	<Task20 />
 	<TaskEnd />
 {/if}
+<Task21 />
