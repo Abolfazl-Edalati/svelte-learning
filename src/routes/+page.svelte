@@ -11,6 +11,7 @@
 	import Task18 from '$lib/components/Task18.svelte';
 	import Task19 from '$lib/components/Task19.svelte';
 	import Task2 from '$lib/components/Task2.svelte';
+	import Task20 from '$lib/components/Task20.svelte';
 	import Task3 from '$lib/components/Task3.svelte';
 	import Task4 from '$lib/components/Task4.svelte';
 	import Task5 from '$lib/components/Task5.svelte';
@@ -19,6 +20,12 @@
 	import Task8 from '$lib/components/Task8.svelte';
 	import Task9 from '$lib/components/Task9.svelte';
 	import TaskEnd from '$lib/components/TaskEnd.svelte';
+	let destroyComponent = $state(false);
+
+	setTimeout(() => {
+		destroyComponent = true;
+		console.log(destroyComponent);
+	}, 5000);
 </script>
 
 <Task1 />
@@ -65,3 +72,7 @@
 <TaskEnd />
 <Task19 />
 <TaskEnd />
+{#if !destroyComponent}
+	<Task20 />
+	<TaskEnd />
+{/if}

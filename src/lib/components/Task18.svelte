@@ -4,6 +4,6 @@
 	let count = $state(0);
 </script>
 
-{@debug count}
+<!-- {@debug count} -->
 <Button onclick={() => count++}>increment</Button>
 <p>{count}</p>
