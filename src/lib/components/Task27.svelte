@@ -7,13 +7,21 @@
 		lastName = $state('');
 		age = $state(0);
 		isOnline = $state(false);
-		fullName = $derived(newUser.name + ' ' + newUser.lastName);
+		fullName = $derived(`${this.name} ${this.lastName}`);
+		draftName = $state('');
+		draftLastName = $state('');
 
 		constructor(name: string, lastName: string, age: number, isOnline: boolean) {
 			this.name = name;
 			this.lastName = lastName;
 			this.age = age;
 			this.isOnline = isOnline;
+			this.draftLastName = lastName;
+			this.draftName = name;
+
+			$effect(() => {
+				console.log(this.fullName);
+			});
 		}
 
 		birthday() {
@@ -23,8 +31,9 @@
 		toggleOnline() {
 			this.isOnline = !this.isOnline;
 		}
-		changeName(newName: string) {
-			this.name = newName;
+		changeName() {
+			this.name = this.draftName;
+			this.lastName = this.draftLastName;
 		}
 	}
 
@@ -37,8 +46,9 @@
 	<p>online status: {newUser.isOnline}</p>
 </div>
 
-<Input bind:value={newUser.name} />
-<Input bind:value={newUser.lastName} />
+<Input bind:value={newUser.draftName} />
+<Input bind:value={newUser.draftLastName} />
+<Button onclick={() => newUser.changeName()}>Change Name</Button>
 <Button onclick={() => newUser.toggleOnline()}>
 	{newUser.isOnline ? 'Change to Offline' : 'Change to Online'}
 </Button>
