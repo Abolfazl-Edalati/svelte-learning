@@ -1,5 +1,7 @@
 <script lang="ts">
-	import Task27 from '$lib/components/Task27.svelte';
+	import Task28 from '$lib/components/Task28.svelte';
+
+	// import Task27 from '$lib/components/Task27.svelte';
 
 	// import Card from '$lib/components/Card.svelte';
 	// import Task1 from '$lib/components/Task1.svelte';
@@ -94,4 +96,5 @@
 <Task24 value="Abolfazl" /> -->
 <!-- <Task25 /> -->
 <!-- <Task26 /> -->
-<Task27 />
+<!-- <Task27 /> -->
+<Task28 />
