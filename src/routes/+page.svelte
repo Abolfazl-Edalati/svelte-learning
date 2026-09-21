@@ -17,7 +17,8 @@
 	// import Task22 from '$lib/components/Task22.svelte';
 	// import Task23 from '$lib/components/Task23.svelte';
 	// import Task24 from '$lib/components/Task24.svelte';
-	import Task25 from '$lib/components/Task25.svelte';
+	// import Task25 from '$lib/components/Task25.svelte';
+	import Task26 from '$lib/components/Task26.svelte';
 	// import Task3 from '$lib/components/Task3.svelte';
 	// import Task4 from '$lib/components/Task4.svelte';
 	// import Task5 from '$lib/components/Task5.svelte';
@@ -89,4 +90,5 @@
 <Task23 />
 <TaskEnd />
 <Task24 value="Abolfazl" /> -->
-<Task25 />
+<!-- <Task25 /> -->
+<Task26 />

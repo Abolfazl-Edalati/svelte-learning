@@ -8,6 +8,6 @@
 	];
 </script>
 
-{#each users as user}
+{#each users as user (user.name)}
 	{@render item(user)}
 {/each}
