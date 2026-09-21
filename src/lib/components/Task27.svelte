@@ -4,11 +4,14 @@
 
 	class User {
 		name = $state('');
+		lastName = $state('');
 		age = $state(0);
 		isOnline = $state(false);
+		fullName = $derived(newUser.name + ' ' + newUser.lastName);
 
-		constructor(name: string, age: number, isOnline: boolean) {
+		constructor(name: string, lastName: string, age: number, isOnline: boolean) {
 			this.name = name;
+			this.lastName = lastName;
 			this.age = age;
 			this.isOnline = isOnline;
 		}
@@ -25,16 +28,17 @@
 		}
 	}
 
-	const newUser = new User('Abolfazl', 22, true);
+	const newUser = new User('Abolfazl', 'Edalati', 22, true);
 </script>
 
 <div>
-	<p>name: {newUser.name}</p>
+	<p>Full Name: {newUser.fullName}</p>
 	<p>age: {newUser.age}</p>
 	<p>online status: {newUser.isOnline}</p>
 </div>
 
 <Input bind:value={newUser.name} />
+<Input bind:value={newUser.lastName} />
 <Button onclick={() => newUser.toggleOnline()}>
 	{newUser.isOnline ? 'Change to Offline' : 'Change to Online'}
 </Button>
