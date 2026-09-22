@@ -1,9 +1,9 @@
 <script lang="ts">
-	import Task29 from '$lib/components/Task29.svelte';
+	import Task31 from '$lib/components/Task31.svelte';
 
+	// import Task29 from '$lib/components/Task29.svelte';
 	// import Task28 from '$lib/components/Task28.svelte';
 	// import Task27 from '$lib/components/Task27.svelte';
-
 	// import Card from '$lib/components/Card.svelte';
 	// import Task1 from '$lib/components/Task1.svelte';
 	// import Task10 from '$lib/components/Task10.svelte';
@@ -99,4 +99,5 @@
 <!-- <Task26 /> -->
 <!-- <Task27 /> -->
 <!-- <Task28 /> -->
-<Task29 />
+<!-- <Task29 /> -->
+<Task31 />
