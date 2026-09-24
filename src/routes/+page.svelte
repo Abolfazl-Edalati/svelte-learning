@@ -1,5 +1,7 @@
 <script lang="ts">
-	import Task31 from '$lib/components/Task31.svelte';
+	import Task32 from '$lib/components/Task32.svelte';
+
+	// import Task31 from '$lib/components/Task31.svelte';
 
 	// import Task29 from '$lib/components/Task29.svelte';
 	// import Task28 from '$lib/components/Task28.svelte';
@@ -100,4 +102,5 @@
 <!-- <Task27 /> -->
 <!-- <Task28 /> -->
 <!-- <Task29 /> -->
-<Task31 />
+<!-- <Task31 /> -->
+<Task32 />
